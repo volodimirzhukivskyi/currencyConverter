@@ -1,0 +1,166 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.acronym {
+    font-weight: 900;
+    color: gold;
+}
+
+.price-el {
+    color: white;
+    font-weight: 500;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 150px;
+    background: slategrey;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 155px);
+}
+
+.form-input {
+    padding: 15px 0px 15px 100px;
+    border: 4px solid transparent;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 4px solid rgb(35 81 183 / 40%);;
+
+}
+
+.input-content {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+
+.form-select {
+    border: none;
+}
+.form-select:focus{
+    padding:0 10px;
+    outline: none;
+}
+.form-select:focus option:hover {
+  color: red;
+
+}
+
+.input-wrapper {
+    position: relative;
+    background: white;
+    margin: 20px;
+    box-shadow: 0px 5px 8px 5px rgb(0 0 0 / 21%);
+
+}
+
+.input-wrapper:focus {
+    border: 2px solid rgb(35 81 183 / 40%);;
+}
+.img{
+    width: 15px;
+    height: 15px;
+}
+.footer{
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.footer p{
+    margin: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+.hide{
+    display: none;
+}
+.loading{
+    height: calc(100vh - 155px);
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-title{
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+}
+.animate-el{
+    padding: 0 20px;
+    display: inline-block;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+    animation: bounce-top 2s infinite both;
+}
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
